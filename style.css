@@ -1,0 +1,821 @@
+/*----------------------------- Reset CSS--------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+
+hr{
+  margin: 0 !important;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 3px solid #ff0000 !important;
+  margin: 8px 0 0 0 !important;
+  padding: 0;
+}
+
+.hr-footer{
+  border-top: 1px solid rgba(255, 255, 255, 0.6) !important;
+  
+}
+
+.fw-bolder{
+  font-weight: bolder;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.title-h1{
+  font-size: 36px;
+}
+
+/* Tạo màu nền cho thanh cuộn */
+::-webkit-scrollbar-track {
+  background: #7a6c6c;
+}
+
+/* Tạo màu cho thanh cuộn */
+::-webkit-scrollbar-thumb {
+  background: #f8014f;
+}
+
+/* Tạo màu cho nút nhấn trên thanh cuộn */
+::-webkit-scrollbar-thumb:hover {
+  background: #c00336;
+}
+
+/* Tạo kích thước cho thanh cuộn dọc */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Tạo kích thước cho thanh cuộn ngang */
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Tạo hình dạng tròn cho thanh cuộn */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* --------------------------START CSS header------------------------- */
+.dropdown-item.active{
+  background-color: #ff0000 !important;
+
+}
+
+.nav-item-about-3t a {
+  font-weight: lighter !important;
+  color: black !important;
+  transition: all .3s;
+}
+
+.nav-link.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link.dropdown-toggle.rotate-up::after {
+  transform: rotate(180deg);
+}
+.container{
+  width: 1140px;
+}
+
+.logo{
+    width: 178px;
+    height: 67px;
+    transition: all .3s;
+}
+
+
+
+.btn-contact{
+    background-color: #ff0000;
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn-contact:hover{
+  background-color: #ff0000aa;
+}
+
+.nav-item a{
+    font-weight: 700;
+    color: black !important;
+    transition: all .3s;
+}
+
+
+nav.navbar.navbar-expand-lg.navbar-light{
+  width: 1125px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+
+/* --------------------------END CSS header------------------------- */
+
+/* --------------------------START CSS banner------------------------- */
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #ff0000;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ff0000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* --------------------------END CSS banner------------------------- */
+
+
+/* --------------------------START CSS section collaborative customers------------------------- */
+.img-logo-customer{
+    width: 150px;
+}
+
+.content-right{
+    background-color: #ff0000;
+    border-radius: 10px;
+    height: 600px;
+    width: 360px;
+}
+
+/* --------------------------END CSS section collaborative customers------------------------- */
+
+
+/* --------------------------START CSS Section typical service------------------------- */
+.thumbnail{
+    width: 100%;
+    height: 250px;
+    background-color: #ff0000;
+    border-radius: 10px;
+}
+
+.thumbnail.light-color{
+    background-color: #ffcccc;
+}
+.intro{
+    line-height: 2rem;
+}
+.intro a{
+    color: #333333bd;
+    text-decoration: underline;
+}
+.title-service{
+    font-size: larger;
+    font-weight: bold;
+}
+.intro  .see-all-btn{
+    text-decoration: none;
+    color: #ff0000;
+}
+
+a.add-width{
+  width: 200px;
+}
+
+/* --------------------------END CSS Section typical service------------------------- */
+
+/* --------------------------START CSS Section Overall solution------------------------- */
+.content-left .btn-up{
+  background-color: #ff0000;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.content-left .btn-down{
+  background-color: #f5f5f5;
+  color: black;
+  text-align: left;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  padding: 8px;
+}
+
+.content-right-section-solution{
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.img-thumbnail-solition{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-section-solution{
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* --------------------------END CSS Section Overall solution------------------------- */
+
+/* --------------------------START CSS Section Reason choose 3T------------------------- */
+
+.container-section-reason{
+  display: flex;
+}
+
+.container-col-customer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-reason-choose .add-width{
+  width: 276px;
+}
+
+.content-right-section-reason{
+  background-color: #ff0000;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.detail-intro{
+  line-height: 1.5rem;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.667);
+}
+
+.img-18{
+  width: 0px !important;
+  padding-right: 0 !important;
+}
+.achievement{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.text-1000{
+  font-size: 42px;
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+.text-04 h1{
+  font-size: 42px;
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+.text-18 h1{
+  font-size: 42px;
+  color: #ff0000;
+  font-weight: bolder;
+}
+
+.reset-padding-reason{
+  padding: 0 !important;
+}
+.reset-margin-reason{
+  margin: 0 !important;
+}
+
+/* --------------------------END CSS Section Reason choose 3T------------------------- */
+
+/* --------------------------START CSS Section typical project------------------------- */
+.top-redirect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 5px 5px;
+  border-radius: 10px;
+}
+
+.top-redirect.active{
+  background-color: #ffcccc;
+}
+
+
+.img-icon-typical{
+  margin-right: 15px;
+}
+
+.title-typical{
+  margin-right: 25px;
+}
+
+.content-section-project{
+  width: 350px;
+  height: 380px;
+  background-color: #ffcccc;
+  border-radius: 10px;
+}
+
+.content-up, .content-down{
+  font-weight: lighter;
+}
+
+.content-up{
+  font-size: 20px;  
+}
+
+.link-see-more-project{
+  color: #ff0000;
+  font-size: 20px;
+}
+
+.link-see-more-project:hover{
+  text-decoration: none;
+  color: #7a6c6c;
+}
+/* --------------------------END CSS Section typical project------------------------- */
+
+
+/* --------------------------START CSS Section Information------------------------- */
+.content-section-information{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.item-section-information{
+  background-color: #cccccc;
+  width: 95px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.container-content-information{
+  width: 1100px;
+  height: 160px;
+  background-color: #ebebeb;
+  margin-top: 40px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.point{
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.content-information{
+  font-weight: 600;
+}
+
+/* --------------------------END CSS Section Information------------------------- */
+
+
+/* --------------------------START CSS Section New & Event------------------------- */
+.new-big{
+  background-color: #ffcccc;
+  width: 360px;
+  height: 600px;
+}
+
+.new-small{
+  background-color: #ffcccc;
+  width: 360px;
+  height: 200px;
+}
+
+.new-small-container{
+  margin-top: 105px;
+}
+
+.title-content{
+  width: 365px;
+}
+
+.new-content{
+  width: 365px;
+}
+
+.mg-bottom-new{
+  margin-bottom: 20px;
+}
+
+.title-red{
+  color: #ff0000;
+  font-weight: 700;
+}
+
+.link-see-more-new{
+  color: #ff0000;
+  font-size: 20px;
+}
+
+.link-see-more-new:hover{
+  text-decoration: none;
+  color: #7a6c6c;
+}
+
+.title-content h5{
+  margin-top: 10px;
+  font-weight: 600 !important;
+}
+/* --------------------------END CSS Section New & Event------------------------- */
+
+
+/* --------------------------START CSS Section Contact------------------------- */
+.section-contact{
+  width: 1140px;
+  height: 760px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+
+.content-section-contact-left{
+  padding-top: 50px;
+  padding-left: 80px !important;
+}
+
+.content-section-contact{
+  font-weight: lighter;
+  font-size: 17px;
+}
+
+.content-logo-section-contact{
+  margin-left: 40px !important;
+  
+}
+
+.img-couple-logo{
+  padding: 0 !important;
+ 
+}
+.img-couple-logo img{
+  width: 400px !important;
+ 
+}
+
+.img-phone{
+  border-radius: 50%;
+  background-color: #ffcccc;
+  width: 50px;
+  height: 50px;
+  padding-right: 20px;
+}
+
+.hotline{
+  font-weight: bold;
+}
+
+.reset-padding-section-contact{
+  padding: 0 !important;
+}
+
+.input-form-section-contact{
+  width: 420px !important;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+  background-color: #ffcccc !important;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.input-form-content-section-contact{
+  width: 420px !important;
+  height: 120px;
+  float: right;
+  margin-right: 20px;
+  background-color: #ffcccc !important;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.6) !important ;
+
+}
+
+.content-section-contact-right{
+  margin-top: 110px;
+}
+
+.float-left-section-contact{
+  margin-left: 100px !important;
+}
+
+.location-title{
+  margin-right: 50px;
+}
+
+.container-btn-send{
+  width: 420px;
+  height: 120px;
+  display: flex;
+
+}
+
+.title-btn-send{
+  width: 320px;
+  height: 70px;
+  background-color: #ff0000;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content-btn-send{
+  margin-bottom: 0 !important;
+}
+
+.img-send-btn{
+  width: 80px;
+  height: 70px;
+}
+
+.input-result{
+  width: 50px !important;
+}
+
+/* --------------------------END CSS Section Contact------------------------- */
+
+/* --------------------------START CSS Section Ecosystem------------------------- */
+
+
+.content-section-ecosystem{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 !important;
+}
+
+.item-section-ecosystem{
+  border-radius: 5px;
+  background-color: #ffcccc;
+  width: 160px !important;
+  height: 40px !important;
+  padding: 0 !important;
+}
+
+/* --------------------------END CSS Section Ecosystem------------------------- */
+/* --------------------------START CSS Section FOOTER------------------------- */
+
+.footer-section{
+  background-color: black;
+  width: 100%;
+  
+}
+
+.footer-up{
+  margin-top: 30px;
+}
+
+.container-section-footer-up{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-section-footer-up{
+  display: flex;
+  padding: 0 !important;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.item-section-footer-up.add-padding-section-footer-up{
+  padding-left: 90px !important;
+}
+
+.item-section-footer-up a{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: lighter !important;
+  line-height: 25px;
+}
+
+.item-section-footer-up a:hover{
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.title-section-footer-up{
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hotline-section-footer , .email-section-footer{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.img-section-logo-footer{
+  width: 260px;
+  height: auto;
+}
+
+.content-section-footer-down{
+  padding: 0 !important;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.img-section-footer-down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding-left: 100px !important;
+}
+
+.img-logo-customer{
+  position: relative;
+}
+
+
+/* --------------START CSS before after section Choose 3T ----------------*/
+.set-after::after {
+  content: "";
+  width: 0.5px;
+  height: 100%;
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  color: red;
+  font-weight: bold;
+  z-index: 100000;
+}
+
+.set-after::before {
+  content: "";
+  width: 86%;
+  height: 1px;
+  position: absolute;
+  bottom: -21%;
+  right: 0%;
+  left: 7%;
+  display: inline-block;
+  color: red;
+  font-weight: bold;
+  z-index: 100000;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+ 
+.set-after:nth-child(4)::after{
+  display: none;
+}
+
+.item-section-choose-customer:nth-child(5) .set-after::before{
+  display: none;
+}
+
+/* --------------END CSS before after section Choose 3T ----------------*/
+
+.dflex-custom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
